@@ -4,9 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./asset/css/font/fontawesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="./asset/css/font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Music Player</title>
 </head>
 <body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <header class="header">
+                <!-- Header -->
+                <span class="header-dow"><i class="header-dow-icon ti-angle-down"></i></span>
+                <div class="header-content">
+                    <h4>Now playing:</h4>
+                    <h2></h2>
+                </div>
+                <span class="header-add"><i class="header-add-icon ti-plus"></i></span>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" >
+
+                </div>
+            </div>
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="ti-loop"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="ti-control-skip-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play ">
+                    <i class="ti-control-play"></i>
+                    <i class="ti-control-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="ti-control-skip-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="ti-control-shuffle"></i>
+                </div>
+            </div>
+            <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+            <audio  id= "audio" ></audio>
+        </div>
+        <!-- Play list -->
+        <div class="playlist">
+            <!-- <div class="song-item">
+                <div class="song-item__thumb" style=" background-image: url(./asset/img/thumbnail/thumb4.jpg)">
+
+                </div>
+                <div class="song-item__body">
+                    <h3 class="song-item__body-title">Music name</h3>
+                    <p class="song-item__body-author">Singer</p>
+                </div>
+                <div class="song-item__options">
+                    <i class="song-item__option-icon ti-more-alt"></i>
+                </div>
+            </div>
+            <div class="song-item active">
+                <div class="song-item__thumb">
+
+                </div>
+                <div class="song-item__body">
+                    <h3 class="song-item__body-title">Music name</h3>
+                    <p class="song-item__body-author">Singer</p>
+                </div>
+                <div class="song-item__options">
+                    <i class="song-item__option-icon ti-more-alt"></i>
+                </div>
+            </div>
+            <div class="song-item">
+                <div class="song-item__thumb">
+
+                </div>
+                <div class="song-item__body">
+                    <h3 class="song-item__body-title">Music name</h3>
+                    <p class="song-item__body-author">Singer</p>
+                </div>
+                <div class="song-item__options">
+                    <i class="song-item__option-icon ti-more-alt"></i>
+                </div>
+            </div>
+            <div class="song-item">
+                <div class="song-item__thumb">
+
+                </div>
+                <div class="song-item__body">
+                    <h3 class="song-item__body-title">Music name</h3>
+                    <p class="song-item__body-author">Singer</p>
+                </div>
+                <div class="song-item__options">
+                    <i class="song-item__option-icon ti-more-alt"></i>
+                </div>
+            </div>
+            <div class="song-item">
+                <div class="song-item__thumb">
+
+                </div>
+                <div class="song-item__body">
+                    <h3 class="song-item__body-title">Music name</h3>
+                    <p class="song-item__body-author">Singer</p>
+                </div>
+                <div class="song-item__options">
+                    <i class="song-item__option-icon ti-more-alt"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="./asset/js/app.js">
     
+    </script>
 </body>
 </html>
